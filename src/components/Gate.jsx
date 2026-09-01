@@ -25,7 +25,7 @@ export default function Gate({ onEnter }) {
       </div>
 
       <div className={`gate-card ${shake ? "gate-card--shake" : ""}`}>
-        <img src={logo} alt="Logo bochita08" className="gate-logo" />
+        <img src={logo} alt="Logo Nahuel M. Fortuna" className="gate-logo" />
         <p className="gate-eyebrow">Portfolio de Nahuel Fortuna</p>
         <h1 className="gate-title">Antes de entrar…</h1>
         <p className="gate-subtitle">¿Cómo te llamás? Así te recibo como corresponde.</p>

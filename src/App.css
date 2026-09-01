@@ -141,8 +141,10 @@
 }
 
 .gate-logo {
-  width: 68px;
-  height: 68px;
+  display: block;
+  width: auto;
+  height: 96px;
+  max-width: 100%;
   object-fit: contain;
   margin: 0 auto 16px;
   border-radius: 16px;
@@ -253,8 +255,9 @@
 }
 
 .navbar-logo {
-  width: 30px;
-  height: 30px;
+  width: auto;
+  height: 34px;
+  max-width: 130px;
   object-fit: contain;
   border-radius: 8px;
   background: #fff;

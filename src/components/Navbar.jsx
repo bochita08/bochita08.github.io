@@ -21,7 +21,7 @@ export default function Navbar({ visitorName, onExit }) {
       <div className="navbar-inner">
         <NavLink to="/" className="navbar-brand" onClick={() => setOpen(false)}>
           <img src={logo} alt="" className="navbar-logo" />
-          <span>bochita08</span>
+          <span>Nahuel M. Fortuna</span>
         </NavLink>
 
         <nav className={`navbar-links ${open ? "navbar-links--open" : ""}`}>
