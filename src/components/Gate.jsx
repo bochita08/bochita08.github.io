@@ -28,7 +28,7 @@ export default function Gate({ onEnter }) {
         <img src={logo} alt="Logo Nahuel M. Fortuna" className="gate-logo" />
         <p className="gate-eyebrow">Portfolio de Nahuel Fortuna</p>
         <h1 className="gate-title">Antes de entrar…</h1>
-        <p className="gate-subtitle">¿Cómo te llamás? Así te recibo como corresponde.</p>
+        <p className="gate-subtitle">¿Cómo te llamás?, Coloca TU NOMBRE así te recibo como corresponde.</p>
 
         <form className="gate-form" onSubmit={submit}>
           <label className="gate-label" htmlFor="visitor-name">
