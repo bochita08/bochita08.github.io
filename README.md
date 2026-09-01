@@ -4,6 +4,8 @@ Portfolio personal en React, con un "modal de entrada" donde el visitante escrib
 
 Hecho con **React + Vite + React Router**, sin librerías de diseño externas (CSS propio, tema oscuro con acentos teal/violeta).
 
+>>>> LINK: https://bochita08.github.io/
+
 ## Cómo probarlo en tu computadora
 
 Necesitás tener [Node.js](https://nodejs.org/) instalado (versión 18 o superior).
