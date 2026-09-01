@@ -238,7 +238,7 @@
 .navbar-inner {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 14px 24px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -251,6 +251,7 @@
   gap: 10px;
   font-weight: 800;
   font-size: 15px;
+  white-space: nowrap;
   letter-spacing: 0.02em;
 }
 
@@ -276,6 +277,7 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--text-dim);
+  white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
@@ -295,6 +297,7 @@
   gap: 10px;
   font-size: 13.5px;
   color: var(--text-dim);
+  white-space: nowrap;
 }
 
 .navbar-visitor--mobile {
@@ -324,7 +327,7 @@
   color: var(--text);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .navbar-links {
     position: fixed;
     top: 64px;
