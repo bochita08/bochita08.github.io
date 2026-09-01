@@ -1,4 +1,4 @@
-# portf-welcome.github.io — Portfolio de Nahuel Fortuna
+# Hola, bienvenido/a
 
 Portfolio personal en React, con un "modal de entrada" donde el visitante escribe su nombre, y varias páginas navegables: Inicio, Sobre mí, Experiencia, Habilidades, Proyectos y Contacto.
 
