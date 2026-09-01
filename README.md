@@ -51,3 +51,4 @@ src/
 
 No es una autenticación real — es solo para personalizar el saludo. Cuando alguien entra por primera vez, ve una tarjeta pidiendo su nombre. Al confirmar, ese nombre se guarda en el `localStorage` de su navegador (no en ningún servidor) y se lo saluda en el Inicio y en la barra de navegación. El botón "Salir" borra ese nombre y vuelve a mostrar la tarjeta.
 
+************************************************************
