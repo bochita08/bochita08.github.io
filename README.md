@@ -61,7 +61,7 @@ src/
 
 Cada nivel se juega en orden, con una consolita tipo `test-runner.log` que va mostrando tus intentos en vivo. Al terminar los tres, accedés a un reporte final con gráficos de tus aciertos y un análisis de causa raíz de cada bug. Todo el progreso es local (se puede reiniciar en cualquier momento) — así que animate a jugarlo las veces que quieras.
 
-## 🛠️ Funcionalidades para mostrar el oficio
+## 🛠️ Algunas Funcionalidades
 
 Un pantallazo rápido de cosas que armé en este proyecto, como muestra de lo que sé hacer:
 
