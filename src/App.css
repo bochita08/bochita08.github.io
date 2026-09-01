@@ -914,9 +914,12 @@
   font-size: 14.5px;
 }
 
-.cyber-showcase-img {
+.cyber-showcase-art {
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
+  display: block;
 }
 
 @media (max-width: 860px) {
