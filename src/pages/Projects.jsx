@@ -9,6 +9,8 @@ import imgCursosphp from "../assets/proj-cursosphp.png";
 import imgContable from "../assets/proj-contable.png";
 import imgMymachines from "../assets/proj-mymachines.jpg";
 import imgPuntoycoma from "../assets/proj-puntoycoma.png";
+import imgKioscoapi from "../assets/proj-kioscoapi.png";
+import imgKioscopage from "../assets/proj-kioscopage.png";
 
 const IMAGES = {
   zapatillas: imgZapatillas,
@@ -19,6 +21,8 @@ const IMAGES = {
   contable: imgContable,
   mymachines: imgMymachines,
   puntoycoma: imgPuntoycoma,
+  kioscoapi: imgKioscoapi,
+  kioscopage: imgKioscopage,
 };
 
 export default function Projects() {

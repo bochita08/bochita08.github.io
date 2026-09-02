@@ -121,6 +121,9 @@ export const profile = {
         "WordPress",
         "CodeIgniter4",
         "React + Vite",
+        "TypeScript",
+        "Node.js",
+        "Express",
         "Java",
         "Spring Boot",
         ".NET",
@@ -132,7 +135,7 @@ export const profile = {
     {
       category: "QA & Testing",
       icon: "bug",
-      items: ["Pruebas manuales", "Automatización de pruebas", "Selenium WebDriver", "Codeception", "TestRail", "UAT", "Testing Web & Mobile", "BrowserStack"],
+      items: ["Pruebas manuales", "Automatización de pruebas", "Selenium WebDriver", "Codeception", "TestRail", "UAT", "Testing Web & Mobile", "BrowserStack", "Swagger / OpenAPI", "Postman", "Newman", "API Testing"],
     },
     {
       category: "DevOps & Cloud",
@@ -172,6 +175,22 @@ export const profile = {
   // no se muestra — no hay nada roto ni links falsos. Para sumarle demo a
   // un proyecto: desplegalo en algún lado gratis y agregá demoUrl: "https://...".
   projects: [
+    {
+      title: "Kiosco API — Testing & QA Automation",
+      description:
+        "API REST en Node.js y Express para la gestión de productos de un kiosco, documentada con Swagger/OpenAPI y testeada end-to-end con Postman, con la suite automatizada desde terminal vía Newman.",
+      tags: ["Node.js", "Express", "Swagger", "Postman", "Newman"],
+      link: "https://github.com/bochita08/Kiosco---API-postman-swagger-UI-Newman",
+      image: "kioscoapi",
+    },
+    {
+      title: "Kiosco Page — Frontend React + TypeScript",
+      description:
+        "Frontend en React + TypeScript, proyecto hermano de la Kiosco API: catálogo con búsqueda y filtros, carrito persistente y panel de administración con CRUD completo.",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Query"],
+      link: "https://github.com/bochita08/Kiosc-page",
+      image: "kioscopage",
+    },
     {
       title: "PuntoYComa — Propiedades y Viviendas",
       description:
