@@ -52,14 +52,14 @@ export const profile = {
     {
       role: "Full Stack Developer → QA Tester (Manual & Automation)",
       company: "SERFE — Soluciones de Software",
-      place: "Santa Fe, Argentina (remoto)",
+      place: "Santa Fe, Argentina (Híbrido)",
       period: "Diciembre 2024 — Agosto 2026",
       bullets: [
         "Desarrollo y mantenimiento de aplicaciones web con PHP, MySQL, WordPress, JavaScript y Git; despliegues con Docker e integración en pipelines de CI/CD.",
         "Transición a QA Tester: pruebas manuales y automatizadas de aplicaciones web y mobile (Android e iOS) con BrowserStack.",
         "Elaboración de matrices de prueba y análisis funcional por release; creación de test cases enfocados en mejoras y edge cases.",
         "Búsqueda, identificación y debugging de bugs junto al equipo de desarrollo; automatización con Selenium WebDriver y Codeception.",
-        "Gestión de incidencias en JIRA, documentación en Confluence, monitoreo con Datadog y AWS, soporte en Intercom e Iterable.",
+        "Gestión de incidencias en JIRA, documentación en Confluence, monitoreo con Datadog, soporte en Intercom e Iterable.",
       ],
     },
     {
@@ -130,22 +130,25 @@ export const profile = {
         "NetBeans",
         "Eclipse",
         "Git",
+        "React Native",
+        "Expo / Expo Go",
+        "API Google Maps",
       ],
     },
     {
       category: "QA & Testing",
       icon: "bug",
-      items: ["Pruebas manuales", "Automatización de pruebas", "Selenium WebDriver", "Codeception", "TestRail", "UAT", "Testing Web & Mobile", "BrowserStack", "Swagger / OpenAPI", "Postman", "Newman", "API Testing"],
+      items: ["Pruebas manuales", "Automatización de pruebas", "Selenium WebDriver", "Appium", "Allure Report", "WebdriverIO", "Codeception", "TestRail", "UAT", "Testing Web & Mobile", "BrowserStack", "Swagger / OpenAPI", "Postman", "Newman", "API Testing"],
     },
     {
       category: "DevOps & Cloud",
       icon: "cloud",
-      items: ["Docker", "CI/CD", "Linux", "AWS", "Datadog"],
+      items: ["Docker", "CI/CD", "GitHub Actions", "Linux", "Datadog"],
     },
     {
       category: "Ciberseguridad",
       icon: "shield",
-      items: ["OWASP Top 10", "Pentesting", "Hardening", "Kali Linux", "Nmap", "SQLmap", "Wireshark", "Metasploit", "Burpsuite", "Nessus", "ZAP", "OSINT", "CVE"],
+      items: ["OWASP Top 10", "Pentesting", "Hardening", "Kali Linux", "Nmap", "SQLmap", "Wireshark", "Metasploit", "Burpsuite", "Nessus", "OWASP ZAP", "OSINT", "CVE"],
     },
     {
       category: "Gestión & Colaboración",
@@ -175,6 +178,22 @@ export const profile = {
   // no se muestra — no hay nada roto ni links falsos. Para sumarle demo a
   // un proyecto: desplegalo en algún lado gratis y agregá demoUrl: "https://...".
   projects: [
+    {
+      title: "PROP+ — App Inmobiliaria (React Native + Expo)",
+      description:
+        "App mobile de listado y búsqueda de propiedades, desarrollada con Expo SDK 54, React Native y TypeScript: autenticación, filtros, mapa interactivo con pines de ubicación, favoritos y perfil de usuario. Probada en dispositivo real con Expo Go.",
+      tags: ["React Native", "Expo", "TypeScript", "Google Maps API", "GitHub Actions"],
+      link: "https://github.com/bochita08/claudio",
+      image: "claudio",
+    },
+    {
+      title: "PROP+ E2E — Testing Automatizado Mobile",
+      description:
+        "Suite de tests E2E para la app PROP+ con Appium, WebdriverIO y Mocha sobre emulador Android: flujos de login, validaciones y navegación, con reportes en Allure y ejecución automatizada vía GitHub Actions.",
+      tags: ["Appium", "WebdriverIO", "Mocha", "Allure", "GitHub Actions", "TypeScript"],
+      link: "https://github.com/bochita08/propplus-e2e",
+      image: "propplusE2e",
+    },
     {
       title: "Kiosco API — Testing & QA Automation",
       description:

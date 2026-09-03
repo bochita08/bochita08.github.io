@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import PageHeader from "../components/PageHeader";
 import Icon from "../components/Icon";
 import { profile } from "../data/profile";
@@ -11,6 +13,8 @@ import imgMymachines from "../assets/proj-mymachines.jpg";
 import imgPuntoycoma from "../assets/proj-puntoycoma.png";
 import imgKioscoapi from "../assets/proj-kioscoapi.png";
 import imgKioscopage from "../assets/proj-kioscopage.png";
+import imgClaudio from "../assets/proj-claudio.png";
+import imgPropplusE2e from "../assets/proj-propplus-e2e.png";
 
 const IMAGES = {
   zapatillas: imgZapatillas,
@@ -23,9 +27,31 @@ const IMAGES = {
   puntoycoma: imgPuntoycoma,
   kioscoapi: imgKioscoapi,
   kioscopage: imgKioscopage,
+  claudio: imgClaudio,
+  propplusE2e: imgPropplusE2e,
 };
 
+const PROJECT_COUNT = profile.projects.length;
+const ALL_TAGS = [...new Set(profile.projects.flatMap((p) => p.tags))].sort((a, b) =>
+  a.localeCompare(b)
+);
+
 export default function Projects() {
+  const [lightbox, setLightbox] = useState(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [lightbox]);
+
   return (
     <div className="page">
       <PageHeader
@@ -34,11 +60,41 @@ export default function Projects() {
         subtitle="Repos públicos y trabajos propios. El código está todo en mi GitHub."
       />
 
+      <section className="projects-summary">
+        <p className="projects-summary-count">
+          {PROJECT_COUNT} proyecto{PROJECT_COUNT !== 1 ? "s" : ""}
+        </p>
+        <div className="projects-summary-tags">
+          <div className="projects-summary-tags-track">
+            {ALL_TAGS.map((t) => (
+              <span key={`a-${t}`}>{t}</span>
+            ))}
+            {ALL_TAGS.map((t) => (
+              <span key={`b-${t}`} aria-hidden="true">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="projects-grid">
         {profile.projects.map((p) => (
           <div className="project-card" key={p.title}>
             {p.image && IMAGES[p.image] && (
-              <div className="project-card-thumb">
+              <div
+                className="project-card-thumb"
+                onClick={() => setLightbox({ src: IMAGES[p.image], title: p.title })}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setLightbox({ src: IMAGES[p.image], title: p.title });
+                  }
+                }}
+                aria-label={`Ver imagen de ${p.title} en grande`}
+              >
                 <img src={IMAGES[p.image]} alt="" loading="lazy" />
               </div>
             )}
@@ -88,6 +144,31 @@ export default function Projects() {
           .
         </p>
       </section>
+
+      {lightbox &&
+        createPortal(
+          <div
+            className="image-lightbox"
+            onClick={() => setLightbox(null)}
+            role="dialog"
+            aria-modal="true"
+            aria-label={lightbox.title}
+          >
+            <button
+              className="image-lightbox-close"
+              onClick={() => setLightbox(null)}
+              aria-label="Cerrar"
+            >
+              <Icon name="close" size={20} />
+            </button>
+            <img
+              src={lightbox.src}
+              alt={lightbox.title}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>,
+          document.body
+        )}
     </div>
   );
 }
