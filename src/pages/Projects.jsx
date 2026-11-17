@@ -138,10 +138,10 @@ export default function Projects() {
       <section className="projects-note">
         <Icon name="github" size={18} />
         <p>
-          Las capturas de "Proyectos 2024" pertenecen a trabajos anteriores maquetados en
-          WordPress, PHP y React — quedaron en mi máquina en su momento, así que por ahora no
-          tienen versión en vivo para abrir; el botón "Abrir proyecto" va a ir apareciendo a
-          medida que despliegue cada uno. El código completo y los repos activos están en{" "}
+          Los proyectos con "Abrir proyecto" se pueden probar en vivo desde el navegador. Los
+          que no lo tienen necesitan un servidor o un entorno propio (PHP, Java, Python,
+          WordPress, la API y las suites de testing), así que se ven desde el código. Todo
+          está en{" "}
           <a href={profile.github} target="_blank" rel="noreferrer">
             github.com/bochita08
           </a>

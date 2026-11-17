@@ -202,6 +202,7 @@ export const profile = {
         "App mobile de listado y búsqueda de propiedades, desarrollada con Expo SDK 54, React Native y TypeScript: autenticación, filtros, mapa interactivo con pines de ubicación, favoritos y perfil de usuario. Probada en dispositivo real con Expo Go.",
       tags: ["React Native", "Expo", "TypeScript", "Google Maps API", "GitHub Actions"],
       link: "https://github.com/bochita08/claudio",
+      demoUrl: "https://bochita08.github.io/claudio/",
       image: "claudio",
     },
     {
@@ -226,6 +227,7 @@ export const profile = {
         "Frontend en React + TypeScript, proyecto hermano de la Kiosco API: catálogo con búsqueda y filtros, carrito persistente y panel de administración con CRUD completo.",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Query"],
       link: "https://github.com/bochita08/Kiosc-page",
+      demoUrl: "https://bochita08.github.io/Kiosc-page/",
       image: "kioscopage",
     },
     {
@@ -250,6 +252,7 @@ export const profile = {
         "Tienda online maquetada en React + Vite: home con listado de productos, detalle de producto, login y registro.",
       tags: ["React", "Vite", "JavaScript"],
       link: "https://github.com/bochita08/Pagina-ECOMMERCE-REACT-VITE--",
+      demoUrl: "https://bochita08.github.io/Pagina-ECOMMERCE-REACT-VITE--/",
       image: "iphonexx4",
     },
     {
@@ -289,7 +292,8 @@ export const profile = {
       description:
         "Validación de formularios de registro con sintaxis ES6 y mensajes de confirmación dinámicos vía AJAX.",
       tags: ["JavaScript", "AJAX", "ES6"],
-      link: "https://github.com/bochita08/bochita08.github.io",
+      link: "https://github.com/bochita08/CreateYourAccount",
+      demoUrl: "https://bochita08.github.io/CreateYourAccount/",
       image: "formulario",
     },
   ],
