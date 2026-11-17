@@ -184,6 +184,7 @@ export const profile = {
         "E-commerce ficticio de figuras de colección, enfocado en animación de interfaz: ilustraciones SVG hechas a mano en código, Spider-Man cruzando la ciudad de fondo, figuras que vuelan al carrito, login con mascota que se tapa los ojos, tic-tac-toe contra IA y bubble sort jugable.",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "SVG"],
       link: "https://github.com/bochita08/spider-store",
+      demoUrl: "https://bochita08.github.io/spider-store/",
       image: "spiderstore",
     },
     {
@@ -192,6 +193,7 @@ export const profile = {
         "Tienda de pastelería con carrito y pedido por WhatsApp. La portada es una gelatina de molde en 3D que tiembla de verdad: render con WebGPU y física de cuerpo blando en un Web Worker, que se puede tocar, golpear, cortar con cuchillo y comer con cuchara.",
       tags: ["JavaScript", "WebGPU", "WGSL", "Web Workers", "Física", "esbuild"],
       link: "https://github.com/bochita08/cakenow",
+      demoUrl: "https://bochita08.github.io/cakenow/",
       image: "cakenow",
     },
     {
