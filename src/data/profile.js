@@ -179,6 +179,22 @@ export const profile = {
   // un proyecto: desplegalo en algún lado gratis y agregá demoUrl: "https://...".
   projects: [
     {
+      title: "Spider-Store — Tienda con animaciones",
+      description:
+        "E-commerce ficticio de figuras de colección, enfocado en animación de interfaz: ilustraciones SVG hechas a mano en código, Spider-Man cruzando la ciudad de fondo, figuras que vuelan al carrito, login con mascota que se tapa los ojos, tic-tac-toe contra IA y bubble sort jugable.",
+      tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "SVG"],
+      link: "https://github.com/bochita08/spider-store",
+      image: "spiderstore",
+    },
+    {
+      title: "CakeNow!+ — Tienda de postres con gelatina 3D",
+      description:
+        "Tienda de pastelería con carrito y pedido por WhatsApp. La portada es una gelatina de molde en 3D que tiembla de verdad: render con WebGPU y física de cuerpo blando en un Web Worker, que se puede tocar, golpear, cortar con cuchillo y comer con cuchara.",
+      tags: ["JavaScript", "WebGPU", "WGSL", "Web Workers", "Física", "esbuild"],
+      link: "https://github.com/bochita08/cakenow",
+      image: "cakenow",
+    },
+    {
       title: "PROP+ — App Inmobiliaria (React Native + Expo)",
       description:
         "App mobile de listado y búsqueda de propiedades, desarrollada con Expo SDK 54, React Native y TypeScript: autenticación, filtros, mapa interactivo con pines de ubicación, favoritos y perfil de usuario. Probada en dispositivo real con Expo Go.",

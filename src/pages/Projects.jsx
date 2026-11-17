@@ -15,6 +15,8 @@ import imgKioscoapi from "../assets/proj-kioscoapi.png";
 import imgKioscopage from "../assets/proj-kioscopage.png";
 import imgClaudio from "../assets/proj-claudio.png";
 import imgPropplusE2e from "../assets/proj-propplus-e2e.png";
+import imgSpiderstore from "../assets/proj-spiderstore.png";
+import imgCakenow from "../assets/proj-cakenow.png";
 
 const IMAGES = {
   zapatillas: imgZapatillas,
@@ -29,6 +31,8 @@ const IMAGES = {
   kioscopage: imgKioscopage,
   claudio: imgClaudio,
   propplusE2e: imgPropplusE2e,
+  spiderstore: imgSpiderstore,
+  cakenow: imgCakenow,
 };
 
 const PROJECT_COUNT = profile.projects.length;
